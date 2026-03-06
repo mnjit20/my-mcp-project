@@ -1,3 +1,5 @@
+from os import name
+
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("DocumentMCP", log_level="ERROR")
@@ -13,6 +15,14 @@ docs = {
 }
 
 # TODO: Write a tool to read a doc
+# @mcp.tool(
+#     name: "read_doc_contents", 
+#     description="Read the contents of a document by its name."
+# )
+
+# def read_document(doc_name: str):
+#     return docs.get(doc_name, "Document not found.")
+
 # TODO: Write a tool to edit a doc
 # TODO: Write a resource to return all doc id's
 # TODO: Write a resource to return the contents of a particular doc
